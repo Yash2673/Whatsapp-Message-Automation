@@ -43,7 +43,7 @@ public class WhatsappMessage {
 		System.out.println("Enter the number of times, the message needs to be sent to each chat");
 		int count = sc.nextInt();
 		
-		List<WebElement> chats = driver.findElements(By.xpath("//div[@aria-label='Search results.']/div//span[@data-icon='default-group']"));
+		List<WebElement> chats = driver.findElements(By.xpath("//div[@aria-label='Search results.']/div//div[@class='HONz8']"));
 		for(int i=0;i<chats.size();i++)
 		{
 			WebElement chat = chats.get(i);
